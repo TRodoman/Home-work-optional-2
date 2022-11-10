@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home work optional 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="case">
+      <header>
+        <nav>
+          <ul class="list-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+
+          <button
+            class="btn btn-primary d-lg-none btn-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasResponsive"
+            aria-controls="offcanvasResponsive"
+          >
+            <img src="./svg/checked.svg" alt="checked" />
+          </button>
+
+          <div
+            class="offcanvas-lg offcanvas-end"
+            tabindex="-1"
+            id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel"
+          >
+            <div class="offcanvas-header menu">
+              <ui class="offcanvas-menu">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About me</a>
+                </li>
+                <li>
+                  <a href="#skills">Skills</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#contacts">Contacts</a>
+                </li>
+                <li>
+                  <p class="hero-text-leng-web">ru <span>| eng</span></p>
+                </li>
+              </ui>
+              <button
+                type="button"
+                class="btn-close close-icon"
+                data-bs-dismiss="offcanvas"
+                data-bs-target="#offcanvasResponsive"
+                aria-label="Close"
+              >
+                <img src="./svg/close.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!------------------------------->
+      <section>
+        <div class="hero">
+          <div>
+            <h1>Denis<br />Novik</h1>
+            <p class="hero-text">
+              <span class="text_el">ux | ui </span>designer <br />
+              24 years old, Minsk
+            </p>
+            <p class="hero-text-leng">ru <span>| eng</span></p>
+          </div>
+          <div class="hero-img">
+            <!-- <img class="hero-img" src="./img/foto_1.png" alt="" /> -->
+          </div>
+        </div>
+      </section>
+      <!------------------------About-------------->
+      <section>
+        <div class="about" id="about">
+          <h2>About me</h2>
+          <div class="about_text">
+            <p>
+              Hi, I'm Denis – UX/UI designer from Minsk.<br />I'm interested in
+              design and everything connected with it.
+            </p>
+            <p>
+              I'm studying at courses "Web and mobile design<br />interfaces" in
+              IT-Academy.
+            </p>
+            <p>
+              Ready to implement excellent projects<br />with wonderful people.
+            </p>
+          </div>
+          <div class="about-web">
+            <p>
+              Hi, I'm Denis – UX/UI designer<br>from Minsk.I'm interested in
+              design<br>and everything connected with it.
+            </p>
+            <p>
+              I'm studying at courses<br>"Web and mobile design interfaces"<br>in
+              IT-Academy.
+            </p>
+            <p>
+              Ready to implement excellent<br>projects with wonderful people.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------- Skills---------------->
+      <section>
+        <div class="skills" id="skills">
+          <div class="skills-title">
+            <h2>Skills</h2>
+            <p>I work in such programs as</p>
+          </div>
+
+          <ul>
+            <li>
+              <img src="./svg/icon_1.svg" alt="Adobe Photoshop" />
+              <p>Adobe Photoshop</p>
+              <img src="./svg/star_1.svg" alt="star" />
+            </li>
+            <li>
+              <img src="./svg/icon_2.svg" alt="Adobe Illustrator" />
+              <p>Adobe Illustrator</p>
+              <img src="./svg/star_2.svg" alt="star" />
+            </li>
+            <li>
+              <img src="./svg/icon_3.svg" alt="Adobe After Effects" />
+              <p>Adobe After Effects</p>
+              <img src="./svg/star_1.svg" alt="star" />
+            </li>
+            <li>
+              <img src="./svg/icon_4.svg" alt="Figma" />
+              <p>Figma</p>
+              <img src="./svg/star_1.svg" alt="star" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-------------Portfolio------------------->
+      <section>
+        <div class="portfolio" id="portfolio">
+          <h2>Portfolio</h2>
+          <ul>
+            <li>
+              <img class="portfolio-img"src="./img/foto_2.png" alt="woman">
+              <img class="portfolio-web" src="./img/foto2_2.png" alt="woman">
+              <a class="portfolio-linck" href="#">Online fashion store - Homepage</a>
+            </li>
+            <li>
+              <img class="portfolio-img" src="./img/foto_3.png" alt="men">
+              <img class="portfolio-web" src="./img/foto2_3.png" alt="men">
+              <a class="portfolio-linck" href="#">Reebok Store - Concept</a>
+            </li>
+            <li>
+              <img class="portfolio-img" src="./img/foto_4.png" alt="video camera">
+              <img class="portfolio-web" src="./img/foto2_4.png" alt="video camera">
+              <a class="portfolio-linck" href="#">Braun Landing Page - Concept</a>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+      <!--------------footer---------------->
+      <footer>
+      <div class="footer" id="contacts">
+        <div class="footer-title">
+          <h2>Contacts</h2>
+          <p>Want to know more or just chat?<br>You are welcome!</p>
+          <button type="button">Send message</button>
+        </div>
+        <ul>
+          <li><a href="https://ua.linkedin.com" target="_blank"><img src="./svg/icon2_1.svg" alt="LinkedIn"></a></li>
+          <li><a href=" https://www.instagram.com" target="_blank"><img src="./svg/icon2_2.svg" alt="Instagram"></a></li>
+          <li><a href="https://www.behance.net" target="_blank"><img src="./svg/icon2_3.svg" alt="Behance"></a></li>
+          <li><a href="https://dribbble.com" target="_blank"><img src="./svg/icon2_4.svg" alt="Dribble"></a></li>
+        </ul>
+        <p>Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+      </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

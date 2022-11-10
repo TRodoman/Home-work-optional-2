@@ -1,0 +1,310 @@
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/gilroy-medium.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/gilroy-medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/gilroy-medium.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/gilroy-medium.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/gilroy-medium.svg#gilroy-medium")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/gilroy-bold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/gilroy-bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/gilroy-bold.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/gilroy-bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/gilroy-bold.svg#gilroy-bold")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+:root {
+  font-size: 10px !important;
+  --body-color: #070707;
+  --text-hover-color: #070707;
+  --case-background:  #f6f6f6;
+  --section-background: #FFFFFF;
+  --button-color: #FFFFFF;
+  --button-background: #000000;
+  --text-color: #828282;
+}
+
+body {
+  font-family: "Gilroy Medium" sans-serif !important;
+  color: var(--body-color);
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  line-height: 1.22;
+}
+
+.case {
+  background: var(--case-background);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------- */
+
+header {
+  background: var(--section-background);
+  box-sizing: content-box !important;
+}
+nav {
+  width: 940px;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  background: var(--section-background);
+  border-bottom: 1px solid var(--text-color);
+}
+.list-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+.list-menu > li > a {
+  font-family: "Gilroy-Bold" sans-serif;
+  color: var(--text-color);
+  display: block;
+  font-weight: 700;
+}
+
+.list-menu > li > a:hover {
+  color: var(--text-hover-color);
+}
+
+.btn-menu {
+  display: none;
+}
+
+/* ----------------------------- */
+
+.hero {
+  height: 680px;
+  background: var(--section-background);
+  margin: 0;
+}
+
+.hero > div:first-child {
+  width: 940px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+}
+
+.hero div > h1 {
+  font-family: "Gilroy-Bold" sans-serif;
+  font-weight: 700;
+  font-size: 4.73rem;
+  line-height: 1.25;
+  margin-top: 40px;
+}
+
+.text_el {
+  text-transform: uppercase;
+}
+
+.hero-text-leng,
+.hero-text-leng > span {
+  align-items: flex-start;
+  transform: rotate(-90deg);
+  margin-bottom: 35px;
+  font-family: "Gilroy-Bold" sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: #828282;
+  text-transform: uppercase;
+}
+.hero-text-leng > span {
+  color: var(--body-color);
+}
+
+.hero-img {
+  margin: 0 auto;
+  width: 943.61px;
+  height: 387px;
+  background-image: url(../img/foto_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*--------------About------------- */
+.about {
+  height: 506px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_text {
+  width: 486px;
+  height: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.about > h2 {
+  font-family: "Gilroy-Bold" sans-serif;
+  margin-top: 40px;
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.24;
+}
+.about_text > p {
+  text-align: center;
+}
+.about-web {
+  display: none;
+}
+
+/* ----------Skills-------- */
+.skills {
+  height: 610px;
+  background: var(--section-background);
+}
+.skills-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 69px;
+}
+.skills-title > h2 {
+  font-family: "Gilroy-Bold" sans-serif;
+  margin-top: 91px;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.24;
+}
+
+.skills-title > p {
+  margin-bottom: 83.5px;
+}
+
+.skills > ul {
+  display: flex;
+  gap: 91px;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+.skills > ul > li {
+  width: 167px;
+  height: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills > ul > li > p {
+  margin-top: 19px;
+  margin-bottom: 42px;
+}
+
+/*---------------Portfolio----------------*/
+
+.portfolio {
+  height: 2253px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio > h2 {
+  margin-top: 113px;
+  margin-bottom: 42px;
+  font-family: "Gilroy-Bold" sans-serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.24;
+}
+
+.portfolio > ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 99px;
+}
+
+.portfolio > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-linck {
+  margin-top: 45px;
+  color: var(--text-hover-color);
+  text-decoration: underline;
+}
+.portfolio-linck:hover {
+  color: var(--text-hover-color);
+  transform: scale(1.1);
+}
+
+.portfolio-web {
+  display: none;
+}
+/*--------------footer------------*/
+.footer {
+  height: 622px;
+  background-color: var(--section-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer-title > h2 {
+  margin-top: 114.3px;
+  margin-bottom: 26px;
+  font-family: "Gilroy-Bold" sans-serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.24;
+}
+
+.footer-title > button {
+  width: 180.5px;
+  height: 42px;
+  margin-top: 29.6px;
+  background: var(--button-background);
+  border-radius: 50px;
+  font-weight: 700;
+  color: var(--button-color);
+  border: none;
+}
+
+.footer > ul {
+  display: flex;
+  gap: 61px;
+  margin-top: 86px;
+  margin-bottom: 45px;
+}
+
+.footer > p {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: var(--text-color);
+}
